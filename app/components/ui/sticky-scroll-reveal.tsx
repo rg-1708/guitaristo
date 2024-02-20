@@ -38,11 +38,7 @@ export const StickyScroll = ({
     });
   });
 
-  const backgroundColors = [
-    "var(--gray-950)",
-    "var(--black)",
-    "var(--neutral-900)",
-  ];
+  const backgroundColors = ["var(--neutral-800)", "var(--black)"];
   const linearGradients = [
     "linear-gradient(to bottom right, var(--cyan-500), var(--emerald-500))",
     "linear-gradient(to bottom right, var(--pink-500), var(--indigo-500))",
@@ -53,7 +49,7 @@ export const StickyScroll = ({
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
-      className="h-[30rem] overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 no-scrollbar"
+      className="h-[30rem] max-w-screen-2xl mx-auto overflow-y-auto flex justify-center relative space-x-10 rounded-md p-10 no-scrollbar"
       ref={ref}
     >
       <div className="div relative flex items-start px-4">

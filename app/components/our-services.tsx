@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
-import { StickyScroll } from "../ui/sticky-scroll-reveal";
+import { StickyScroll } from "./ui/sticky-scroll-reveal";
+import { DecoHeader } from "./ui/deco-header";
+import { SectionHeader } from "./ui/section-header";
 
 const content = [
   {
@@ -41,8 +43,9 @@ const images = [
 
 export function OurServices() {
   return (
-    <>
+    <div className="flex flex-col w-full">
+      <SectionHeader text="Why us?" />
       <StickyScroll content={content} images={images} />
-    </>
+    </div>
   );
 }

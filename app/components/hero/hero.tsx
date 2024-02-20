@@ -4,7 +4,7 @@ import HeroActions from "./hero-actions";
 
 export function Hero() {
   return (
-    <>
+    <section id="hero">
       <WavyBackground
         containerClassName="max-w-[100vw]"
         className="max-w-4xl mx-auto pb-40 px-3 flex items-center justify-center flex-col"
@@ -17,6 +17,6 @@ export function Hero() {
         </p>
         <HeroActions />
       </WavyBackground>
-    </>
+    </section>
   );
 }

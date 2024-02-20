@@ -16,7 +16,8 @@ export function GridBackground({ children, className }: GridBackgroundProps) {
     >
       <div
         className={cn(
-          `absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]`,
+          `absolute h-full w-full pointer-events-none inset-0 flex items-center justify-center 
+          dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]`,
           className
         )}
       ></div>

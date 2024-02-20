@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerScroll } from "../ui/container-scroll-animation";
+import { ContainerScroll } from "./ui/container-scroll-animation";
 
 export function ContainerParallax() {
   return (
